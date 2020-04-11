@@ -16,6 +16,7 @@
         <kotlin.code.style>official</kotlin.code.style>
         <junit.version>4.12</junit.version>
         <beam.version>2.19.0</beam.version>
+        <kafka.version>2.3.1</kafka.version>
     </properties>
 
     <dependencies>
@@ -41,6 +42,20 @@
             <artifactId>beam-sdks-java-core</artifactId>
             <version>${beam.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.beam/beam-sdks-java-io-kafka -->
+        <dependency>
+            <groupId>org.apache.beam</groupId>
+            <artifactId>beam-sdks-java-io-kafka</artifactId>
+            <version>${beam.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients -->
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>${kafka.version}</version>
+        </dependency>
+
+
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
         <dependency>
             <groupId>org.slf4j</groupId>
