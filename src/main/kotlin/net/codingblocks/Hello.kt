@@ -35,12 +35,12 @@ fun main(args: Array<String>) {
         .apply("Extract Kafka Message", KafkaTransform())
 
     // TODO next time
-    // Pull in "Tabular" data from AlienTypes
+    // Parse to Kotlin objects
+    // Pull "Tabular" data from AlienTypes
+    // Join
     // "Enrich" our sightings data with the tabular data
     // Output the enriched data to another topic
-    // (already setup to display enriched data on a map)
     // Writing unit tests / refactoring
-    // Get this running in Dataflow
 
     p.run().waitUntilFinish()
 }
